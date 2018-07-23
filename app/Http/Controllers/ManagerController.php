@@ -15,6 +15,6 @@ class ManagerController
 {
 
     public function mainManagerPage(){
-        return View('managerTemplate');
+        return View('managerViews/managerTemplate');
     }
 }
