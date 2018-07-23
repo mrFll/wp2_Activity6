@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'CustomerController@productsMainPage');
+Route::get('/m', 'ManagerController@mainManagerPage');
