@@ -15,10 +15,10 @@ class CreateCompanyTable extends Migration
     {
         Schema::create('company', function (Blueprint $table) {
 
-            $table->charset = 'utf8';
+            //$table->charset = 'utf8';
             $table->increments('id');
             $table->string('name', 50);
-            $table->timestamps();
+            //$table->timestamps();
         });
     }
 

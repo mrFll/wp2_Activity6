@@ -9,12 +9,16 @@
 namespace App\Http\Controllers;
 
 
-use Illuminate\View\View;
-
 class ManagerController
 {
 
     public function mainManagerPage(){
-        return View('managerViews/managerTemplate');
+       return View('managerViews/managerTemplate');
     }
+
+    public function addNewProductView()
+    {
+        return View('managerViews/addNewProduct');
+    }
+
 }

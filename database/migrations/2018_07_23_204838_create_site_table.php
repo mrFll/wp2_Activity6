@@ -14,12 +14,12 @@ class CreateSiteTable extends Migration
     public function up()
     {
         Schema::create('site', function (Blueprint $table) {
-            $table->charset = 'utf8';
+            //$table->charset = 'utf8';
             $table->increments('id');
             $table->string('name', 50);
             $table->string('logoID', 50);
             $table->longText('site_details');
-            $table->timestamps();
+            //$table->timestamps();
         });
     }
 

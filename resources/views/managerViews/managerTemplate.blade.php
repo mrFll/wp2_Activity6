@@ -10,9 +10,10 @@
         <div>
             <ul>
                 <!-- TODO dynamic li maker by the categories that selected by database ************** -->
-                <li><a href="#a">laptop</a></li>
-                <li><a href="#b">phones</a></li>
-                <li><a href="#c">head phones</a></li>
+                <li><a href="/manager">product list</a></li>
+                <li><a href="/manager/addProduct">add new product</a></li>
+                <li><a href="#c">companies</a></li>
+                <li><a href="#c">categories</a></li>
             </ul>
         </div>
 

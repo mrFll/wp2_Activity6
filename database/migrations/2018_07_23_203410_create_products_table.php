@@ -14,16 +14,22 @@ class CreateProductsTable extends Migration
     public function up()
     {
         Schema::create('products', function (Blueprint $table) {
-            $table->charset = 'utf8';
+            //$table->charset = 'utf8';
             $table->increments('id');
             $table->string('name', 50);
-            $table->string('imageName',50);
-            $table->integer('comID', 'false');
-            $table->integer('catID','false');
-            $table->integer('price', 'false');
+            //$table->string('imageName',50);
+            $table->integer('comID');
+            $table->integer('catID');
+            $table->integer('price');
+            /**
+             * 0 -> Mojood
+             * 1 -> na mojood
+             * 2 -> tolid tavaghof
+             * 3 -> be zoodi
+             */
             $table->string('status', 2);
             $table->longText('details');
-            $table->timestamps();
+            //$table->timestamps();
         });
     }
 

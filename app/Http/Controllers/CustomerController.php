@@ -8,8 +8,7 @@
 
 namespace App\Http\Controllers;
 
-
-use Illuminate\View\View;
+use Illuminate\Http\Request;
 
 class CustomerController
 {
@@ -17,9 +16,17 @@ class CustomerController
     /**
      * generate first page that show products for customer
      */
-    public function productsMainPage(){
+    public function productsMainPage(Request $request){
 
-        return View('customerViews/products');
+        $cat = $request->input('category');
+        if($cat == null){
+            // TODO get all products from database
+            return View('customerViews/products');
+        }else{
+            // TODO get products from database that are in inserted category
+            return View('customerViews/products');
+        }
+
     }
 
 
